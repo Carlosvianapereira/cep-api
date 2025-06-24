@@ -13,24 +13,33 @@
 <body>
     <h1>Consultar CEP</h1>
 
-    <form>
+    <form class="row g-3">
         <!-- cep -->
-        <label class="form-label">CEP</label>
-        <input class="form-control" name="cep" id="cep">
+        <div class="col-md-2">
+            <label class="form-label">CEP</label>
+            <input class="form-control" name="cep" id="cep">
+        </div>
 
         <!-- endereço -->
-        <label class="form-label">Logradouro</label>
-        <input class="form-control" name="Logradouro" id="Logradouro">
+        <div class="col-md-8">
+            <label class="form-label">Logradouro</label>
+            <input class="form-control" name="Logradouro" id="Logradouro">
+        </div>
 
         <!-- numero -->
-        <label class="form-label">Nº</label>
-        <input class="form-control" name="numero" id="numero">
+        <div class="col-md-2">
+            <label class="form-label">Nº</label>
+            <input class="form-control" name="numero" id="numero">
+        </div>
 
         <!-- complemento -->
-        <label class="form-label">Complemento</label>
-        <input class="form-control" name="complemento" id="complemento">
+        <div class="col-md-8">
+            <label class="form-label">Complemento</label>
+            <input class="form-control" name="complemento" id="complemento">
+        </div>
         
         <!-- estado -->
+        <div class="col-md-2">
         <label class="form-label">UF</label>
         <select class="form-select" name="uf" id="uf">
         <option selected="">Escolher</option>
@@ -40,8 +49,10 @@
             <option>Pernambuco</option>
             <option>Bahia</option>
         </select>
-        
+        </div>
+
         <!-- localidade -->
+        <div class="col-md-2">
         <label class="form-label">Localidade</label>
         <select class="form-select" name="localidade" id="localidade">
             <option value="">1</option>
@@ -49,10 +60,12 @@
             <option value="">3</option>
             <option value="">4</option>
         </select>
+        </div>
 
-    <div>
-        <button>Enviar</button>
-        <button>Limpar</button>
+
+    <div class="col-md-12">
+        <button class="btn btn-success" type="submit">Enviar</button>
+        <button class="btn btn-light" type="reset">Limpar</button>
     </div>
     </form>
       
