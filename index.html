@@ -33,52 +33,34 @@
         </div>
 
         <!-- complemento -->
-        <div class="col-md-8">
+        <div class="col-md-12">
             <label class="form-label">Complemento</label>
             <input class="form-control" name="complemento" id="complemento">
+        </div>
+
+        <!-- bairro -->
+        <div class="col-md-7">
+            <label class="form-label">Bairro</label>
+            <input class="form-control" name="number" id="bairro">
+        </div>
+
+         <!-- ddd -->
+         <div class="col-md-1">
+            <label class="form-label">DDD</label>
+            <input class="form-control" type="number" name="ddd" id="ddd">
         </div>
         
         <!-- estado -->
         <div class="col-md-2">
         <label class="form-label">UF</label>
-        <select class="form-select" name="uf" id="uf">
-            <option value="AC">Acre</option>
-            <option value="AL">Alagoas</option>
-            <option value="AP">Amapá</option>
-            <option value="AM">Amazonas</option>
-            <option value="BA">Bahia</option>
-            <option value="CE">Ceará</option>
-            <option value="DF">Distrito Federal</option>
-            <option value="ES">Espírito Santo</option>
-            <option value="GO">Goiás</option>
-            <option value="MA">Maranhão</option>
-            <option value="MT">Mato Grosso</option>
-            <option value="MS">Mato Grosso do Sul</option>
-            <option value="MG">Minas Gerais</option>
-            <option value="PA">Pará</option>
-            <option value="PB">Paraíba</option>
-            <option value="PR">Paraná</option>
-            <option value="PE">Pernambuco</option>
-            <option value="PI">Piauí</option>
-            <option value="RJ">Rio de Janeiro</option>
-            <option value="RN">Rio Grande do Norte</option>
-            <option value="RS">Rio Grande do Sul</option>
-            <option value="RO">Rondônia</option>
-            <option value="RR">Roraima</option>
-            <option value="SC">Santa Catarina</option>
-            <option value="SP">São Paulo</option>
-            <option value="SE">Sergipe</option>
-            <option value="TO">Tocantins</option>
-            
+        <select class="form-select" aria-label="default select example" id="uf" onchange="fetchMunicipios(event)">
         </select>
         </div>
 
         <!-- localidade -->
         <div class="col-md-2">
         <label class="form-label">Localidade</label>
-        <select class="form-select" name="localidade" id="localidade">
-            <option>...</option>
-           
+        <select class="form-select" aria-label="default select example" id="localidade">          
         </select>
         </div>
 
