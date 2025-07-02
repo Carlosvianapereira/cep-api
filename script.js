@@ -45,9 +45,10 @@ const fetchEstados = () => {
 fetchEstados () 
 
 
-const fethMunicipios = (uf) => { 
+const fethMunicipios = async uf => {
+  
 
-  fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${uf}/municipios`)
+  await fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${uf}/municipios`)
   .then(response => response.json())
   .then(json => {
     console.log(json)
